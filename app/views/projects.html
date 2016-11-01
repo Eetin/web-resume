@@ -1,0 +1,59 @@
+<div class="container">
+  <h2 class="text-center">Full Stack Projects</h2>
+  <div class="row project-row" ng-repeat="projectRow in projects.fullStackRows">
+    <div class="col-md-4 project" ng-repeat="project in projectRow">
+      <h3 class="text-center project-name">{{project.name}}</h3>
+      <img class="img-responsive" ng-src="{{project.imageUrl}}" alt="{{project.name}}">
+      <div class="text-center">
+        <ul class="list-inline technologies">
+          <li class="tech" ng-repeat="tech in project.technologies">{{tech}}</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <div class="btn-group" role="group">
+          <a class="btn btn-primary" target="_blank" ng-href="{{project.url}}">View</a>
+          <a class="btn btn-success" target="_blank" ng-href="{{project.sourceUrl}}">View Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 class="text-center">Front End Projects</h2>
+  <div class="row project-row" ng-repeat="projectRow in projects.frontEndRows">
+    <div class="col-md-4 project" ng-repeat="project in projectRow">
+      <h3 class="text-center project-name">{{project.name}}</h3>
+      <img class="img-responsive" ng-src="{{project.imageUrl}}" alt="{{project.name}}">
+      <div class="text-center">
+        <ul class="list-inline technologies">
+          <li class="tech" ng-repeat="tech in project.technologies">{{tech}}</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <div class="btn-group" role="group">
+          <a class="btn btn-primary" target="_blank" ng-href="{{project.url}}">View</a>
+          <a class="btn btn-success" target="_blank" ng-href="{{project.sourceUrl}}">View Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center">Back End Projects</h2>
+  <div class="row project-row" ng-repeat="projectRow in projects.backEndRows">
+    <div class="col-md-4 project" ng-repeat="project in projectRow">
+      <h3 class="text-center project-name">{{project.name}}</h3>
+      <img class="img-responsive" ng-src="{{project.imageUrl}}" alt="{{project.name}}">
+      <div class="text-center">
+        <ul class="list-inline technologies">
+          <li class="tech" ng-repeat="tech in project.technologies">{{tech}}</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <div class="btn-group" role="group">
+          <a class="btn btn-primary" target="_blank" ng-href="{{project.url}}">View</a>
+          <a class="btn btn-success" target="_blank" ng-href="{{project.sourceUrl}}">View Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
