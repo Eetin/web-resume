@@ -22,19 +22,20 @@ angular.module('resumeApp')
             return project.type === 'backEnd';
         });
 
+        var i;
         this.fullStackRows = [];
-        for (var i = 0; i < fullStack.length; i += 3) {
+        for (i = 0; i < fullStack.length; i += 3) {
             this.fullStackRows.push(fullStack.slice(i, i + 3));
         }
         console.log(this.fullStackRows);
 
         this.frontEndRows = [];
-        for (var i = 0; i < frontEnd.length; i += 3) {
+        for (i = 0; i < frontEnd.length; i += 3) {
             this.frontEndRows.push(frontEnd.slice(i, i + 3));
         }
 
         this.backEndRows = [];
-        for (var i = 0; i < backEnd.length; i += 3) {
+        for (i = 0; i < backEnd.length; i += 3) {
             this.backEndRows.push(backEnd.slice(i, i + 3));
         }
 
