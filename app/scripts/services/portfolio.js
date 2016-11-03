@@ -59,13 +59,21 @@ angular.module('resumeApp')
             sourceUrl: 'http://codepen.io/Eetin/pen/aNaQeL',
             url: 'http://codepen.io/Eetin/full/aNaQeL/'
         }, {
-            type: 'froneEnd',
+            type: 'frontEnd',
             recent: true,
             name: 'Roguelike',
             technologies: ['HTML', 'SCSS', 'JavaScript', 'Bootstrap', 'React', 'Redux'],
             imageUrl: 'images/roguelike.png',
             sourceUrl: 'https://codepen.io/Eetin/pen/vKGJox',
             url: 'https://codepen.io/Eetin/full/vKGJox/'
+        }, {
+            type:'frontEnd',
+            recent: false,
+            name: 'Web Resume',
+            technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'AngularJS'],
+            imageUrl: 'images/web-resume.png',
+            sourceUrl: 'https://github.com/Eetin/web-resume',
+            url: 'https://eetin.github.io/'
         }, {
             type: 'dataViz',
             recent: false,

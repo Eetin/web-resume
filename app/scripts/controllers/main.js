@@ -8,28 +8,11 @@
  * Controller of the resumeApp
  */
 angular.module('resumeApp')
-    .controller('MainCtrl', ['portfolio', function(portfolio) {
-        this.skills = {
-            primary: [
-                'HTML',
-                'CSS',
-                'JavaScript',
-                'Bootstrap',
-                'AngularJS',
-                'React',
-                'Node.js',
-                'Express.js',
-                'MongoDB (Mongoose)'
-            ],
-            secondary: [
-                'Java',
-                'Python',
-                'C#',
-                'Unity3D'
-            ]
-        };
+    .controller('MainCtrl', ['portfolio', 'skills', 'attending', function(portfolio, skills, attending) {
 
+        this.skills = skills.getSkills();
         this.portfolio = portfolio.getPortfolio();
         this.certificates = portfolio.getCertificates();
+        this.workshops = attending.getWorkshops();
 
     }]);
