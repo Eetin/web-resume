@@ -102,22 +102,6 @@ body {
   border-top: 1px solid #d3d3d3;
 }
 
-.project-row {
-  padding-bottom: 25px;
-}
-
-.project-name {
-  min-height: 2.5em;
-}
-
-.technologies {
-   min-height: 10em;
-}
-
-.technologies-long {
-  min-height: 18em;
-}
-
 .project .tech {
   padding: 5px 10px;
   margin: 5px 5px;
@@ -134,10 +118,40 @@ body {
   margin-right: auto;
 }
 
+@media screen and (max-width: 991px) {
+
+  body {
+    font-size: 1.6em;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
+  
   .contact-button-row {
     margin-top: 10px;
   }
+  
+}
+
+@media screen and (min-width: 992px) {
+
+  .project-row {
+    padding-bottom: 25px;
+  }
+
+  .project-name {
+    min-height: 2.5em;
+  }
+
+  .technologies {
+     min-height: 10em;
+  }
+
+  .technologies-long {
+    min-height: 18em;
+  }
+
 }
 
 .contact-btn {
