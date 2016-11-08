@@ -39,10 +39,18 @@
     <p>Now I'm working on <a href="https://www.coursera.org/learn/hybrid-mobile-development">Multiplatform Mobile App Development with Web Technologies</a> course.</p>
     <p>Other courses I successfully finished without verification can be found <a ng-href="https://degreed.com/eetin/index/1#/collection?type=Course">here</a></p>
   </div>
-  <div class="row marketing" ng-if="main.workshops.length > 0">
-    <h4>I'm planning to attend the following live online workshops:</h4>
+  <div class="row marketing" ng-if="main.workshops.finished.length > 0">
+    <h4>I have participated in the following live online workshops:</h4>
     <ul>
-      <li ng-repeat="workshop in main.workshops">
+      <li ng-repeat="workshop in main.workshops.finished">
+        <a ng-href="{{workshop.url}}">{{workshop.name}} on {{workshop.date}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row marketing" ng-if="main.workshops.future.length > 0">
+    <h4>I am planning to attend the following live online workshops:</h4>
+    <ul>
+      <li ng-repeat="workshop in main.workshops.future">
         <a ng-href="{{workshop.url}}">{{workshop.name}} on {{workshop.date}}</a>
       </li>
     </ul>

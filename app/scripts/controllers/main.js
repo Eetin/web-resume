@@ -13,6 +13,8 @@ angular.module('resumeApp')
         this.skills = skills.getSkills();
         this.portfolio = portfolio.getPortfolio();
         this.certificates = portfolio.getCertificates();
-        this.workshops = attending.getWorkshops();
+        this.workshops = {};
+        this.workshops.finished = attending.workshops.filter(function(workshop) { return workshop.finished; });
+        this.workshops.future = attending.workshops.filter(function(workshop) { return !workshop.finished; });
 
     }]);
