@@ -19,27 +19,7 @@ angular.module('resumeApp')
 			name: 'Reactive Angular 2',
 			date: 'November 9th, 2016',
 			url: 'https://frontendmasters.com/workshops/reactive-angular-2-stable/',
-			finished: false
-		}, {
-			name: 'Secure Authentication for Web Applications & APIs',
-			date: 'November 10th, 2016',
-			url: 'https://frontendmasters.com/workshops/secure-auth/',
-			finished: false
-		}, {
-			name: 'Full Stack for Front-End Engineers',
-			date: 'November 11th, 2016',
-			url: 'https://frontendmasters.com/workshops/full-stack/',
-			finished: false
-		}, {
-			name: 'Electron',
-			date: 'November 15th, 2016',
-			url: 'https://frontendmasters.com/workshops/electron/',
-			finished: false
-		}, {
-			name: 'Complete Introduction to React (feat. Redux & React Router v4)',
-			date: 'December 1st & 2nd, 2016',
-			url: 'https://frontendmasters.com/workshops/intro-react-2/',
-			finished: false
+			finished: true
 		}];
 
 	});
