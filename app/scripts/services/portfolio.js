@@ -174,6 +174,12 @@ angular.module('resumeApp')
             url: 'https://www.coursera.org/account/accomplishments/certificate/LVPYUE4GNVKA',
             institution: 'The Hong Kong University of Science and Technology',
             provider: 'Coursera'
+        }, {
+          name: 'Multiplatform Mobile App Development with Web Technologies',
+          completionDate: 'November 21, 2016',
+          url: 'https://www.coursera.org/account/accomplishments/certificate/Y23GV7HLJVQ8',
+          institution: 'The Hong Kong University of Science and Technology',
+          provider: 'Coursera'
         }];
 
         this.getPortfolio = function() {
